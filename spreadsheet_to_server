@@ -15,8 +15,7 @@ function myFunction() {
     var sel_eventParam1 = values[i][3];
     var sel_event_time = values[i][4];
     
-
-      UrlFetchApp.fetch(`[ENDPOINT_SERVIDOR][PATH_SERVIDOR]`, {
+      UrlFetchApp.fetch(`[ENDPOINT_SERVIDOR][PATH_SERVIDOR]`, { // Añadir el endpoint de tu servidor y el Path elegido al crear el cliente de Measurement Protocol dentro del contenedor del servidor
       method: "POST",
       payload: JSON.stringify({
         client_id: '999999.999999',
